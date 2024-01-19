@@ -2,7 +2,7 @@
 
 const fetchTodos = async () => {
     try {
-      const response = await fetch(`http://13.200.201.179/api/todos`, { 
+      const response = await fetch(`https://13.200.201.179/api/todos`, { 
 
         method: 'GET',
         headers: {
@@ -29,7 +29,7 @@ const fetchTodos = async () => {
   
   const addTodo = async (newTodo) => {
     try {
-      const response = await fetch(`http://13.200.201.179/api/todos`, {
+      const response = await fetch(`https://13.200.201.179/api/todos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
