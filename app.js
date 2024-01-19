@@ -2,7 +2,8 @@
 
 const fetchTodos = async () => {
     try {
-      const response = await fetch(`api/todos`, {
+      const response = await fetch(`http://13.200.201.179/api/todos`, { 
+
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -28,7 +29,7 @@ const fetchTodos = async () => {
   
   const addTodo = async (newTodo) => {
     try {
-      const response = await fetch(`api/todos`, {
+      const response = await fetch(`http://13.200.201.179/api/todos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,4 +51,4 @@ const fetchTodos = async () => {
       console.error('Error adding todo:', error);
       // Handle the error appropriately, e.g., show an error message to the user
     }
-  };
+  };  
