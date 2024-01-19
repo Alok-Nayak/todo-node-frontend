@@ -2,8 +2,7 @@
 
 const fetchTodos = async () => {
     try {
-      //const response = await fetch(`${process.env.REACT_APP_ELASTIC_BEANSTALK_ENDPOINT}/api/todos`, {
-      const response = await fetch(`http://todo-app-env.eba-ezjkxapy.ap-south-1.elasticbeanstalk.com/api/todos`, {
+      const response = await fetch(`http://todo-app-env.eba-ezjkxapy.ap-south-1.elasticbeanstalk.com/api/todos`, { 
 
         method: 'GET',
         headers: {
@@ -52,12 +51,4 @@ const fetchTodos = async () => {
       console.error('Error adding todo:', error);
       // Handle the error appropriately, e.g., show an error message to the user
     }
-  };
-  
-  // Trigger the fetchTodos function
-  fetchTodos();
-  
-  // Trigger the addTodo function
-  // Replace 'New Todo Task' with the actual task you want to add
-  addTodo('New Todo Task');
-  
+  };  
