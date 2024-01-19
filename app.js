@@ -1,4 +1,4 @@
-// frontend-repo/app.js
+// frontend-repo/src/app.js
 
 const fetchTodos = async () => {
     try {
@@ -57,4 +57,5 @@ const fetchTodos = async () => {
   
   // Trigger the addTodo function
   // Replace 'New Todo Task' with the actual task you want to add
-  addTodo('New Todo Task');  
+  addTodo('New Todo Task');
+  
