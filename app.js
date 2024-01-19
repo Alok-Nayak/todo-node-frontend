@@ -26,7 +26,6 @@ const fetchTodos = async () => {
     }
   };
   
-  // Example: Function to add a new todo
   const addTodo = async (newTodo) => {
     try {
       const response = await fetch(`${process.env.REACT_APP_ELASTIC_BEANSTALK_ENDPOINT}/api/todos`, {
@@ -53,9 +52,9 @@ const fetchTodos = async () => {
     }
   };
   
-  // Example: Trigger the fetchTodos function
+  // Trigger the fetchTodos function
   fetchTodos();
   
-  // Example: Trigger the addTodo function
+  // Trigger the addTodo function
   // Replace 'New Todo Task' with the actual task you want to add
   addTodo('New Todo Task');  
