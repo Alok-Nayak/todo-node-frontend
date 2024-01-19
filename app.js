@@ -2,7 +2,9 @@
 
 const fetchTodos = async () => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_ELASTIC_BEANSTALK_ENDPOINT}/api/todos`, {
+      //const response = await fetch(`${process.env.REACT_APP_ELASTIC_BEANSTALK_ENDPOINT}/api/todos`, {
+      const response = await fetch(`http://todo-app-env.eba-ezjkxapy.ap-south-1.elasticbeanstalk.com/api/todos`, {
+
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -28,7 +30,7 @@ const fetchTodos = async () => {
   
   const addTodo = async (newTodo) => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_ELASTIC_BEANSTALK_ENDPOINT}/api/todos`, {
+      const response = await fetch(`http://todo-app-env.eba-ezjkxapy.ap-south-1.elasticbeanstalk.com/api/todos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
