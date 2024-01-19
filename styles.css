@@ -1,0 +1,45 @@
+/* frontend-repo/public/styles.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ff9900; /* Orange background color */
+}
+
+#todoContainer {
+  background-color: #fff; /* White background color */
+  padding: 20px;
+  border: 2px solid #000; /* Black border */
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #000; /* Black border for each todo item */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+  cursor: pointer;
+}
+
