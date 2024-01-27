@@ -3,7 +3,7 @@
 const fetchTodos = async () => {
     try {
       //const response = await fetch(`13.200.201.179/api/todos`, { 
-      const response = await fetch(`http://todo-app-v2-env.eba-3ss2ykja.ap-south-1.elasticbeanstalk.com/api/todos`, {
+      const response = await fetch(`http://todo-note-app-env.eba-cxgmkbt8.ap-south-1.elasticbeanstalk.co/api/todos`, {
 
         method: 'GET',
         headers: {
@@ -30,7 +30,7 @@ const fetchTodos = async () => {
   
   const addTodo = async (newTodo) => {
     try {
-      const response = await fetch(`http://todo-app-v2-env.eba-3ss2ykja.ap-south-1.elasticbeanstalk.com/api/todos`, {
+      const response = await fetch(`http://todo-note-app-env.eba-cxgmkbt8.ap-south-1.elasticbeanstalk.com/api/todos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
